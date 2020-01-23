@@ -19,9 +19,9 @@ h1,
 h2,
 h3 {
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
     &.lg-heading {
-        font-size: 6rem; // 1rem = 16 pixel
+        font-size: 360%; // 1rem = 16 pixel
     }
     &.sm-heading {
         margin-bottom: 2rem;
