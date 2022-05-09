@@ -80,13 +80,14 @@
     </div> 
 
     <!-- END OF HERO SECTION -->
+
+
     <br>
     <div class = "container skills" id="skills">
 
         <h1 class = 'section-heading'>Skills</h1>
         <br>
 
-    
         <h2 class="section-subheading">Languages</h2>
 
         <div class="marquee marquee-short">
@@ -142,7 +143,7 @@
 
     </div>
 
-    <!-- END OF ABOUT ME SECTION -->
+    <!-- END OF SKILL SECTION -->
 
     <br>
     <div class = "container education" id="education">
@@ -244,6 +245,8 @@
         <h1 class = 'section-heading'>Project</h1>
         <br>
 
+
+
     </div>
 
     <!-- END OF PROJECT SECTION -->
@@ -317,7 +320,18 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js " integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s " crossorigin="anonymous "></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script>
+        const root = document.documentElement;
+        const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+        const marqueeContent = document.querySelector("ul.marquee-content");
+
+        root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+        for(let i=0; i<marqueeElementsDisplayed; i++) {
+        marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+        }
+    </script>
 </body>
 
 </html>
