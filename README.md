@@ -1,19 +1,23 @@
 # Portfolio Website
 
-## References
+Github Link: https://elysian01.github.io/
 
-Header and Design
-- https://github.com/mldangelo/personal-site
+Netlify Link: https://abhishekmgupta.netlify.app/
 
-Techstack
-- https://developer-portfolio-1hanzla100.vercel.app/
+Resume Link: [Click Here](https://docs.google.com/document/d/1MwU89hzeNLhtDTw2-nDss6EqNrJadrLJa74E2HqaNNk/edit?usp=sharing)
 
-Project and Landing Page
-- https://www.adityavsingh.com/
+## Feature
 
-Overall
-- https://github.com/somratpro/somrat
-- https://github.com/amananku26/amananku26.github.io
+- Landing page template
+- Fully responsive
+- Full screen navigation
+- Portfolio filter
+- Animated sections
 
-Outstanding
-- https://riyazweb.dev/
+## Quick Start
+
+Quick start options:
+
+- Clone the repo: `git clone https://github.com/Elysian01/elysian01.github.io.git`.
+- [Download from Github](https://github.com/Elysian01/elysian01.github.io/archive/master.zip).
+
