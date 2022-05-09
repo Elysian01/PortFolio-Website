@@ -41,10 +41,10 @@ body {
 
 
 .hero {
-    background-image: url("./images/backgrounds/background-4.jpg");
+    background-image: url("../images/backgrounds/background-4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #252746;
+    background-color: #000;
     background-position: center;
     width: 100vw;
     height: 100vh;
@@ -510,7 +510,7 @@ body {
 
 
 .achievements-bg {
-  background-image: url("./images/backgrounds/background-10.jpg");
+  background-image: url("../images/backgrounds/background-10.jpg");
   background-blend-mode:light;
   background-size: cover;
   background-repeat: no-repeat;
