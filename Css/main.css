@@ -3,123 +3,469 @@ html {
 }
 
 * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
     box-sizing: border-box;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+:root {
+    --white: #fff;
+    --golden: #FFD700;
+    --red: #ef233c;
+    --light-blue: #8ecae6;
+    --green: #00bdaa;
+    --dark: #023047;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
 }
 
 body {
-    color: rgba(136, 134, 134, 0.568);
-    height: 100%;
-    margin: 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
-    padding: 0;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Roboto Flex', sans-serif;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-body:after {
-    content: "";
-    position: absolute;
+
+.hero {
+    background-image: url("../images/background-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #252746;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    /* position: absolute; */
+    /* z-index: -1; */
     top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    left: 0;
+    color: var(--white);
+    overflow: hidden;
 }
 
-.navbar {
-    position: fixed;
-    display: flex;
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.navbar-brand span {
+    color: var(--golden);
+}
+
+.navbar-brand i {
+    color: #fff;
+}
+
+.navbar-brand i:hover {
+    color: var(--white);
+}
+
+
+.navbar-brand:hover {
+    color: #fff !important;
+}
+
+.nav-item {
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.white-hover {
+    color: var(--white) !important;
+}
+
+.golden-hover {
+    color: var(--golden) !important;
+}
+
+.golden-hover:hover {
+    color: var(--white) !important;
+    transition:all 0.2s ease-out;
+}
+
+.white-hover:hover {
+    color: var(--golden) !important;
+    transition:all 0.3s ease-in-out
+}
+
+@media (max-width: 768px) {
+    .hideOverflowOnMobile {
+        overflow: hidden;
+    }
+}
+
+.hero-text {
+    margin-top: 10%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#name {
+    font-weight: bold;
+}
+
+.profile-icons i{
+    color: var(--white);
+    margin: 10px;
+}
+
+.profile-icons i:hover {
+    color: var(--orange);
+    transform: scale(1.2);
+}
+
+#info {
+    color: var(--light-blue);
+}
+
+#info span {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.golden {
+    color: var(--golden);
+}
+
+.red {
+    color: var(--red);
+}
+
+.dark {
+    color: var(--dark);
+}
+
+.golden-button {
+    background-color: transparent;
+    border:1px solid var(--golden);
+    color: var(--golden);
+    padding:5px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: large;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+}
+
+.golden-button:hover {
+    transform: scale(1.2);
+    background-color: var(--golden);
+    border:none;
+    color: var(--dark);
+}
+
+/* ABOUT ME SECTION */
+
+.section-heading {
+    text-align: center;
+    color: var(--golden);
+    font-weight: bold;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    /* border-bottom: 1px solid var(--golden); */
+    padding: 5px;
+}
+
+.section-heading:after {
+     content: ""; 
+    display: block;
+    margin: 0 auto; 
+    width: 50%;
+    padding-top: 20px; 
+    border-bottom: 2px solid var(--golden);
+    border-radius: 50%;
+}
+
+
+
+/* HEADING */
+
+.heading {
+  text-align: center;
+}
+
+.heading__title {
+  font-weight: 600;
+}
+
+.heading__credits {
+  margin: 10px 0px;
+  color: #888888;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+.heading__link {
+  text-decoration: none;
+}
+
+.heading__credits .heading__link {
+  color: inherit;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.education_card {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+.education_card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.card_link,
+.card_icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.card_link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+.card_link:hover::after {
+  width: 100%;
+}
+
+
+.card_icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+.card_title {
+  grid-row: 3/4;
+  font-weight: 600;
+  color: #ffffff;
+  /* color: var(--dark); */
+  /* display: flex; */
+}
+
+.achievement_card_title {
+/* grid-row: 3/4; */
+  font-weight: 600;
+  color: black;
+}
+
+.card_score {
+  grid-row: 4/5;
+  align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+
+.card-1 {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
+
+.card-2 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+.card-3 {
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+  background: radial-gradient(#60efbc, #58d5c9);
+}
+
+/* .card-dark {
+  background-color: #000;
+} */
+
+/* RESPONSIVE */
+
+@media (max-width: 1600px) {
+  .cards {
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 70px;
-    z-index: 100;
+  }
 }
 
-.logo {
-    flex: 1 1 auto;
-    margin-left: 5%;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 30px;
-    color: blue;
-}
+/* WORK EXPERIENCE START */
 
-.nav {
+.card-group {
     display: flex;
-    justify-content: right;
-    list-style: none;
-    margin-right: 8%;
+    flex-direction: column;
 }
 
-a {
-    margin: 15px;
-    padding-right: 10px;
-    text-decoration: none;
-    font-size: 25px;
+.card {
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+}
+.card-title {
+    color: var(--dark);
     font-weight: bold;
-    letter-spacing: 1px;
-    color: blue;
 }
 
-h1,
-h2,
-h3 {
+.card-body {
+    color: var(--dark);
+}
+.card img {
+  width: 30%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+@media only screen and (max-width: 768px) {
+  a {
+    display: none;
+  }
+  .card-body {
+    padding: 0.5em 1.2em;
+    color: var(--dark);
+  }
+  .card-body .card-text {
     margin: 0;
-    font-weight: 500;
+  }
+  .card img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card img {
+    width: 40%;
+  }
 }
 
-h1.large-heading {
-    font-size: 360%;
-    color: blue;
+
+/* Work Experience Ends here */
+
+
+.achievements-bg {
+  background-image: url("../images/background-10.jpg");
+  background-blend-mode:light;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: var(--white);
+  overflow: hidden;
 }
 
-h2.small-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(255, 255, 255, 0.877);
+.achievement_card {
+  margin: 10px 10px;
+  padding: 10px 15px;
+  max-height: 75px;
+  width: 700px;
+  background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+
+  /* background-color: var(--golden); */
+  /* min-height: 100px; */
+  /* display: grid;
+  grid-template-rows: 20px 50px 1fr 50px; */
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  text-align: center;
 }
 
-a {
-    text-decoration: none;
+.achievement_card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
 }
 
-header {
-    position: fixed;
-    z-index: 2;
+.certificates {
+    display:flex;
+    flex-wrap: nowrap;
+    margin: 0 auto;
     width: 100%;
+    justify-content:center;
 }
 
-.text-secondary {
-    color: #eece1a;
+.certificate-card{
+    /* flex-direction: row; */
+    /* margin: 20px 0; */
+    max-width: 400px;
+    max-height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.4s;
+    margin: 5px 20px;
 }
 
-#home {
-    padding: 10rem;
-    height: 100%;
+.certificate-card:hover {
+    transform: scale(1.2);
 }
 
-#home .icons {
-    margin-top: 1rem;
-}
+@media only screen and (max-width: 768px) {
 
-#home .icons a {
-    padding: 0.5rem;
-}
+    .card {
+        flex-direction: column;
+        margin: 0 10px;
+    }
 
-#home .icons a:hover {
-    color: #077be7;
-    transition: all 0.5s ease-out;
-}
+    .card img {
+    width: 100%;
+  }
 
-#cv {
-    margin: 2rem;
-    margin-left: 5rem;
-    background: transparent;
-    border: 5px;
-    border-style: solid;
-    border-color: #077be7;
-    border-radius: 2%;
-    font-size: 1.5rem;
+  .mobile-pt {
+      padding-top: 15px;
+  }
+
+    .achievement_card {
+        width: 100%;
+        padding:10px;
+        max-height: 150px;
+    }
+    
+    .certificates {
+        flex-direction: column;
+        justify-content:center;
+        margin: 50px 0;
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .certificate-card{
+        margin: 20px auto; 
+        max-width:100%;
+        max-height: 100%;
+    }
+
+    .certificate-card a {
+        visibility: visible;
+    }
+
 }

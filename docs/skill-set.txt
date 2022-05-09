@@ -1,3 +1,23 @@
+Achievements and Certificate
+
+Extra-Curricular information
+
+- Chef
+- Hackerrank
+- Codechef
+- Binarysearch
+
+Co-Curricular
+- 3rd in second Year
+- 1st in third Year
+- 1st in IOE
+- 1st in FYP
+
+Activities
+- 
+- Technical Scruting
+
+
 Web Development :- 
 		
 		NodeJs
@@ -6,6 +26,7 @@ Web Development :-
 		CSS
 		JavaScript
 		MySql
+
 
 
 Programming Languages :- 
