@@ -25,6 +25,5 @@ Quick start options:
 
 1. Add Mini-project Section
 2. Refine project and certificate section
-3. Add Scroll Animations
-4. Apply finishing touches
+3. Apply finishing touches
 
