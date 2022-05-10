@@ -409,9 +409,6 @@ body {
 
 
 @media only screen and (max-width: 768px) {
-  a {
-    display: none;
-  }
   .card-body {
     padding: 0.5em 1.2em;
     color: var(--dark);
@@ -586,6 +583,12 @@ body {
   transform: scale(1.2);
 }
 
+.certificate-card-body {
+  color: var(--dark);
+  width: 100%;
+  padding: 0.5em 1em;
+}
+
 @media only screen and (max-width: 768px) {
 
   .card {
@@ -610,20 +613,24 @@ body {
   .certificates {
     flex-direction: column;
     justify-content:center;
-    margin: 5px 0;
-    width: 90vw;
-    /* max-height: 500px; */
+    margin: 5px 10px;
+    width: 100%;
   }
 
   .certificate-card{
-    margin: 20px auto; 
-    padding: 0;
-    width: 100%;
-    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 10px; 
+    padding: 5px;
+    min-width: 325px;
+    height: 100%;
     /* height: 100%; */
   }
 
-  .certificate-card a {
-      visibility: visible;
+  .certificate-card img, .certificate-card-body {
+      width: 100%;
+      background-color: #fff;
   }
 }
