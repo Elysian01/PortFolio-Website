@@ -19,5 +19,12 @@ Resume Link: [Click Here](https://docs.google.com/document/d/1MwU89hzeNLhtDTw2-n
 Quick start options:
 
 - Clone the repo: `git clone https://github.com/Elysian01/elysian01.github.io.git`.
-- [Download from Github](https://github.com/Elysian01/elysian01.github.io/archive/master.zip).
+- [Download from Github](https://github.com/Elysian01/elysian01.github.io/archive/master.zip)
+
+## TODO
+
+1. Add Mini-project Section
+2. Refine project and certificate section
+3. Add Scroll Animations
+4. Apply finishing touches
 
