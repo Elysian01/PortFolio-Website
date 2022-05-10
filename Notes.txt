@@ -1,7 +1,0 @@
-Create React App Tutorial - Portfolio website with React Router v4 and Material design :- https://www.youtube.com/watch?v=n8iA18R76jk
-
-Creating A React Portfolio Part 1 Project Overview :- https://www.youtube.com/watch?v=Tojh63PzBLg&list=PLNglBCIijurlEj4mTvA9XU3k4FTKlDlD0&index=13
-
-Responsive Portfolio Website [1] - Intro & Sass Workflow Setup : - https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU
-
-Make a React Website with Bootstrap - Beginners :- https://www.youtube.com/watch?v=RcfvUWJqHOs
