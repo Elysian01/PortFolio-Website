@@ -23,7 +23,7 @@ Quick start options:
 
 ## TODO
 
-1. Add Mini-project Section
+1. Add more mini-projects 
 2. Refine project and certificate section
 3. Apply finishing touches
 
