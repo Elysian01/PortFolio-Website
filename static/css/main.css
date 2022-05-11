@@ -37,8 +37,23 @@ body {
   color: #fff;
   width: 100%;
   overflow-x: hidden;
+  margin:0;
+  padding: 0;
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
 
 .hero {
   background-image: url("../images/backgrounds/background-4.jpg");
@@ -281,7 +296,7 @@ body {
 
 .marquee-content li img {
   max-width: 100%;
-  max-height: 12vh;
+  max-height: 8vh;
   /* height: 100%; */
   /* border: 2px solid #eee; */
 }
@@ -295,9 +310,13 @@ body {
   html { font-size: 12px; }
   :root {
     --marquee-width: 100vw;
-    --marquee-height: 16vh;
+    --marquee-height: 18vh;
     --marquee-elements-displayed: 3;
   }
+  .marquee-content li img {
+  max-width: 100%;
+  max-height: 6vh;
+}
   .marquee:before, .marquee:after { width: 5rem; }
 }
 
@@ -443,7 +462,6 @@ body {
 .project-card-header img {
   width: 100%;
   height: 300px;
-  /* object-fit: cover; */
 }
 
 
@@ -473,7 +491,25 @@ body {
 .project-btn {
 	text-align: center;
 	justify-content: center;
-	margin: 0 5px;
+	margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .project-btns {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .project-btn button {
+    	margin: 5px auto;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .project-card-body {
+    padding: 10px;
+  }
 }
 
 .project-card-body button:hover {
@@ -599,6 +635,7 @@ body {
     cursor: pointer;
     margin: 8px 0;
     padding: 10px;
+    font-size: 16px;
     /* width: 32px; */
     width: 250px;
     /* height: 32px; */
@@ -606,7 +643,7 @@ body {
     /* line-height: 32px; */
     text-align: center;
     border-radius: 4px;
-    color: #aaa;
+    color: #222;
     background-color: #fff;
     transition: all 0.3s ease;
 }
