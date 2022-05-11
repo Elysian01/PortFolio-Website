@@ -20,6 +20,9 @@
 
 <body>
 
+    <button onclick="topFunction()" id="scroll-to-top" title="Go to top"><i class="fa fa-angle-up"></i></button>
+
+
     <div class="hero" id="hero">
       
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -584,13 +587,13 @@
                     <h5 class="achievement_card_title"><i class="fa fa-trophy" aria-hidden="true"></i> 
                         Acquired 2nd Place in Summer Project Competition FCRIT for Sign Language Translator.</h5>
                 </div>
-                <div data-aos="fade-right" data-aos-duration="600" class="achievement_card">
-                    <h5 class="achievement_card_title"><i class="fa fa-award" aria-hidden="true"></i> 
-                        Golden Badge in Python, Java, Problem Solving, Statistics, and SQL on Hackerrank.</h5>
-                </div>
                 <div data-aos="fade-left" data-aos-duration="600" class="achievement_card">
                     <h5 class="achievement_card_title"><i class="fa fa-trophy" aria-hidden="true"></i> 
                         Acquired 1st Place in IOE (Internet of Everything) Project Competition held in FCRIT for Smart Traffic Light System.</h5>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="600" class="achievement_card">
+                    <h5 class="achievement_card_title"><i class="fa fa-award" aria-hidden="true"></i> 
+                        Golden Badge in Python, Java, Problem Solving, Statistics, and SQL on Hackerrank.</h5>
                 </div>
                 
             </div>
@@ -618,7 +621,7 @@
     <!-- END OF ACHIEVEMENTS SECTION -->
 
   
-    <div class="p-2 bg-warning font-weight-bold text-dark text-center bottom-0">
+    <div class="p-2 bg-warning font-weight-bold text-dark text-center bottom-0 mobile-text">
         You can contact me via <a href="mailto:abhig0209@gmail.com " class="text-danger ">
             abhig0209@gmail.com</a>
     </div>
@@ -643,6 +646,29 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("scroll-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+
     </script>
 </body>
 
