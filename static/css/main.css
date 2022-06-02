@@ -171,6 +171,7 @@ only screen and (min-device-pixel-ratio: 1.5){
 
 #info {
   color: var(--light-blue);
+  font-size: 1.5em;
 }
 
 #info span {

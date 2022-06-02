@@ -26,4 +26,5 @@ Quick start options:
 1. Add more mini-projects 
 2. Refine project and certificate section
 3. Apply finishing touches
+4. Add button to view resume online
 
