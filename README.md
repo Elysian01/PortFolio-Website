@@ -6,6 +6,8 @@ Netlify Link: https://abhishekmgupta.netlify.app/
 
 Resume Link: [Click Here](https://docs.google.com/document/d/1MwU89hzeNLhtDTw2-nDss6EqNrJadrLJa74E2HqaNNk/edit?usp=sharing)
 
+Paper Link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4111759
+
 ## Feature
 
 - Landing page template
