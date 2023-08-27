@@ -1,0 +1,10 @@
+Ideas
+
+1. name highlighting change
+2. hello all chnage to hello
+3. cards ko thik karna hai
+4. links naya tab pe kholna hai
+5. symmetry chhahiye cards mai (project)
+6. background change
+7. projects keliye carosal use kar sakta hai
+8. achievement mai pic nikal ke cards daldo => line pe hover karege tho certificacte ayega
