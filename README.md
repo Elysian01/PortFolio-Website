@@ -15,7 +15,6 @@ Paper Link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4111759
 - Full-screen navigation
 - Portfolio filter
 - Animated sections
-- marja
 
 ## Quick Start
 
