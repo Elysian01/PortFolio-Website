@@ -12,7 +12,7 @@ Paper Link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4111759
 
 - Landing page template
 - Fully responsive
-- Full screen navigation
+- Full-screen navigation
 - Portfolio filter
 - Animated sections
 
