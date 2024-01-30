@@ -8,7 +8,7 @@ Resume Link: [Click Here](https://docs.google.com/document/d/1MwU89hzeNLhtDTw2-n
 
 Paper Link: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4111759
 
-## Feature  vndlv
+## Feature  
 
 - Landing page template
 - Fully responsive
